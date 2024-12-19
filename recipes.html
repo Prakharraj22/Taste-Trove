@@ -1,0 +1,137 @@
+<!-- recipes.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/logo 2.webp">
+    <title>Recipes - Taste Trove</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="flex-container">
+                <img class="logo-img" src="./images/logo 2.webp" alt="Taste Trove Logo">
+                <h1>Taste Trove</h1>
+            </div>            <nav>
+                <a href="about.html">Home</a>
+                <a href="recipes.html" class="active">Recipes</a>
+                <a href="submit-recipe.html">Submit Recipe</a>
+                <a href="signin.html">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="recipes-section">
+            <div class="container">
+                <h2>Discover Delicious Recipes</h2>
+                <div class="search-filters">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search recipes...">
+                    </div>
+                    <div class="filter-options">
+                        <select>
+                            <option value="">All Categories</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="brunch">Brunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                        <select>
+                            <option value="">Sort By</option>
+                            <option value="rating">Highest Rated</option>
+                            <option value="newest">Newest</option>
+                            <option value="popular">Most Popular</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="recipe-grid"> <br>
+                    <article class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="/api/placeholder/300/200" alt="Spaghetti Carbonara">
+                            <div class="recipe-overlay">
+                                <span class="cooking-time"><i class="fas fa-clock"></i> 20 mins</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Spaghetti Carbonara</h3>
+                            <p>A classic Italian pasta dish with a rich, creamy sauce and crispy pancetta.</p>
+                            <div class="recipe-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="difficulty">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Medium</span>
+                                </div>
+                            </div>
+                            <a href="#" class="view-recipe">View Recipe</a>
+                        </div>
+                    </article>
+                    <br>
+                    <article class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="/api/placeholder/300/200" alt="Spaghetti Carbonara">
+                            <div class="recipe-overlay">
+                                <span class="cooking-time"><i class="fas fa-clock"></i> 20 mins</span>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Spaghetti Carbonara</h3>
+                            <p>A classic Italian pasta dish with a rich, creamy sauce and crispy pancetta.</p>
+                            <div class="recipe-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                                <div class="difficulty">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Medium</span>
+                                </div>
+                            </div>
+                            <a href="#" class="view-recipe">View Recipe</a>
+                        </div>
+                    </article>
+
+                    <!-- More recipe cards would go here -->
+                </div>
+
+                <div class="pagination">
+                    <button class="prev-page"><i class="fas fa-chevron-left"></i></button>
+                    <span class="page-number">Page 1 of 10</span>
+                    <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@tastetrove.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 Taste Trove. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/sign-in.js"></script>
+</body>
+</html>

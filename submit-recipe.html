@@ -1,0 +1,138 @@
+<!-- submit-recipe.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/logo 2.webp">
+    <title>Submit Recipe - Taste Trove</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="flex-container">
+                <img class="logo-img" src="./images/logo 2.webp" alt="Taste Trove Logo">
+                <h1>Taste Trove</h1>
+            </div>            <nav>
+                <a href="about.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="submit-recipe.html" class="active">Submit Recipe</a>
+                <a href="signin.html">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="submit-recipe-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Share Your Recipe</h2>
+                    <p class="form-subtitle">Share your culinary masterpiece with our community</p>
+
+                    <form class="recipe-form" id="submitRecipeForm">
+                        <div class="form-group">
+                            <label for="recipeName">Recipe Name</label>
+                            <input type="text" id="recipeName" name="recipeName" required placeholder="Enter recipe name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recipeDescription">Brief Description</label>
+                            <textarea id="recipeDescription" name="description" required placeholder="Describe your recipe in a few sentences"></textarea>
+                        </div>
+
+                        <div class="form-columns">
+                            <div class="form-group">
+                                <label for="prepTime">Preparation Time (minutes)</label>
+                                <input type="number" id="prepTime" name="prepTime" required min="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cookTime">Cooking Time (minutes)</label>
+                                <input type="number" id="cookTime" name="cookTime" required min="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="servings">Servings</label>
+                                <input type="number" id="servings" name="servings" required min="1">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="difficulty">Difficulty Level</label>
+                            <select id="difficulty" name="difficulty" required>
+                                <option value="">Select difficulty</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ingredients">Ingredients</label>
+                            <div class="ingredients-list" id="ingredientsList">
+                                <div class="ingredient-item">
+                                    <input type="text" name="ingredients[]" placeholder="Enter ingredient" required>
+                                    <input type="text" name="amounts[]" placeholder="Amount" required>
+                                    <button type="button" class="remove-ingredient"><i class="fas fa-minus"></i></button>
+                                </div>
+                            </div>
+                            <button type="button" class="add-ingredient"><i class="fas fa-plus"></i> Add Ingredient</button>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="instructions">Cooking Instructions</label>
+                            <div class="instructions-list" id="instructionsList">
+                                <div class="instruction-item">
+                                    <textarea name="instructions[]" placeholder="Enter step instructions" required></textarea>
+                                    <button type="button" class="remove-instruction"><i class="fas fa-minus"></i></button>
+                                </div>
+                            </div>
+                            <button type="button" class="add-instruction"><i class="fas fa-plus"></i> Add Step</button>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recipeImage">Recipe Image</label>
+                            <div class="image-upload-container">
+                                <input type="file" id="recipeImage" name="recipeImage" accept="image/*" required>
+                                <div class="upload-placeholder">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>Click to upload or drag and drop</p>
+                                    <span>Supported formats: JPG, PNG (max. 5MB)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="reset" class="secondary-button">Clear Form</button>
+                            <button type="submit" class="primary-button">Submit Recipe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@tastetrove.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2024 Taste Trove. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/sign-in.js"></script>
+</body>
+</html>
