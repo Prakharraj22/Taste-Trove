@@ -1,11 +1,7 @@
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const signInForm = document.getElementById("signInForm");
     const signUpForm = document.getElementById("signUpForm");
 
-    // Validate Sign In Form
     signInForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
@@ -23,10 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         showToast("Sign-In successful!", "success");
-        // Submit the form or handle sign-in logic here
     });
 
-    // Validate Sign Up Form
     signUpForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
@@ -56,16 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         showToast("Sign-Up successful!", "success");
-        // Submit the form or handle sign-up logic here
     });
 
-    // Helper function to validate email
     function validateEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
 
-    // Helper function to show toast notifications
     function showToast(message, type = "error") {
         const toastContainer = document.getElementById("toastContainer");
         const toast = document.createElement("div");
@@ -78,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 3000);
     }
 
-    // Switch between Sign-In and Sign-Up forms
     document.getElementById("switchToSignUp").addEventListener("click", () => {
         signInForm.classList.remove("active");
         signUpForm.classList.add("active");
@@ -89,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
         signInForm.classList.add("active");
     });
 
-    // Toggle password visibility
     document.querySelectorAll(".toggle-password").forEach((icon) => {
         icon.addEventListener("click", () => {
             const input = icon.previousElementSibling;

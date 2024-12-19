@@ -45,7 +45,6 @@ nav a:hover {
     height: auto;
 }
 
-/* Main Section */
 main {
     padding: 2rem;
     text-align: center;
@@ -222,7 +221,6 @@ body {
     background-color: #e5533d;
 }
 
-/* General styling for the About page */
 #about {
     background-color: #f9f9f9;
     padding: 50px 20px;
@@ -241,7 +239,7 @@ body {
 }
 
 .about-intro .highlight {
-    color: #ff6347; /* Use a vibrant color for emphasis */
+    color: #ff6347;
 }
 
 .about-intro p {
@@ -304,7 +302,6 @@ p {
     margin: 0 auto;
 }
 
-/* Links */
 a {
     color: #ff6347;
     text-decoration: none;
@@ -314,8 +311,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-/* General Form Styling */
 .form-container {
     max-width: 500px;
     margin: 0 auto;
@@ -397,8 +392,6 @@ button:hover {
     text-decoration: underline;
 }
 
-
-/* Form Styles */
 form {
     text-align: left;
     margin: 0 auto;
@@ -432,7 +425,6 @@ form button:hover {
     background: #e65b54;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: white;
@@ -446,7 +438,6 @@ footer p {
 }
 
 
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -460,7 +451,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Header Styles */
 header {
     background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
     color: white;
@@ -507,17 +497,16 @@ nav a:hover, nav a.active {
     transform: translateY(-2px);
 }
 
-/* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                url('https://via.placeholder.com/1920x1080?text=Cooking+Background');
+    
+    background-image: url("../images/bg.webp");
+    border-image-width: 250px;
     background-size: cover;
     background-position: center;
     color: white;
     padding: 100px 0;
     text-align: center;
 }
-
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
@@ -531,9 +520,9 @@ nav a:hover, nav a.active {
 .hero-text {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    color: #ffffff;
 }
 
-/* Features Section */
 .features-section {
     padding: 80px 0;
     background: white;
@@ -565,14 +554,12 @@ nav a:hover, nav a.active {
     margin-bottom: 20px;
 }
 
-/* Mission Section */
 .mission-section {
     background: #f8f9fa;
     padding: 80px 0;
     text-align: center;
 }
 
-/* CTA Section */
 .cta-section {
     background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
     color: white;
@@ -597,14 +584,12 @@ nav a:hover, nav a.active {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Typography */
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -630,7 +615,6 @@ p {
     color: #ff6b6b;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: white;
@@ -664,7 +648,6 @@ footer {
     color: #ff6b6b;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -682,8 +665,6 @@ footer {
     }
 }
 
-
-/* Auth Pages Styles */
 .signin-main {
     min-height: calc(100vh - 160px);
     display: flex;
@@ -852,7 +833,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Toast Styles */
 #toastContainer {
     position: fixed;
     bottom: 20px;
